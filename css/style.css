@@ -10,3 +10,8 @@ html {
     align-items: center;
     justify-content: center;
 }
+
+ul > li {
+    padding: 10rem 0;
+    background-color: orangered;
+}
