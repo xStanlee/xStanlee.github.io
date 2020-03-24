@@ -19,5 +19,5 @@ ul > li {
 li:hover {
     color: black;
     margin: 10rem;
-    outline: black;
+    background-color: red;
 }
