@@ -6,19 +6,19 @@
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png">
         
-        <title>trillo &mdash; Your all-in-one booking app</title>
+        <title>Stanled &mdash; Visual innovate</title>
     </head>
     <body>
         <div class="container">
             <header class="header">
                 
-                <img src="img/logo.png" alt="trillo logo" class="logo">
+                <img src="img/logo/pinterest_profile_image.png" alt="logo Stanled" class="logo">
 
                 <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search hotels">
-                    <button class="search__btn">
+                    <input type="text" class="search__input" placeholder="Search video...">
+                    <button action="#" class="search__btn">
                         <svg class="search__icon">
                             <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
                         </svg>
@@ -27,24 +27,23 @@
                 
 
                 <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-youtube2"></use>
+                    </svg>
+                </div>
                     <div class="user-nav__icon-box">
                         <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                            <use xlink:href="img/sprite.svg#icon-folder-upload"></use>
                         </svg>
-                        <span class="user-nav__notification">7</span>
                     </div>
                     <div class="user-nav__icon-box">
                         <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                            <use xlink:href="img/sprite.svg#icon-bubble"></use>
                         </svg>
                         <span class="user-nav__notification">13</span>
-                    </div>
-                    <div class="user-nav__user">
-                        <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
-                        <span class="user-nav__user-name">Patryk</span>
-                    </div>
                 </nav>
-                
+
             </header>
             <div class="content">
                 <nav class="sidebar">
@@ -52,43 +51,72 @@
                         <li class="side-nav__item side-nav__item--active">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                    <use xlink:href="img/sprite.svg#icon-play"></use>
                                 </svg>
-                                <span>Hotel</span>
+                                <span>Main</span>
                             </a>
                         </li>
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                    <use xlink:href="img/sprite.svg#icon-film"></use>
                                 </svg>
-                                <span>Flight</span>
+                                <span>Commercials</span>
                             </a>
                         </li>
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                    <use xlink:href="img/sprite.svg#icon-credit-card"></use>
                                 </svg>
-                                <span>Car rental</span>
+                                <span>Payments</span>
                             </a>
                         </li>
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                    <use xlink:href="img/sprite.svg#icon-video-camera"></use>
                                 </svg>
-                                <span>Tours</span>
+                                <span>Spots <sup>New!</sup></span>
                             </a>
                         </li>
                     </ul>
 
                     <div class="legal">
-                        &copy; 2k20 by triollo. All rights reserved.
+                        2020 All rights reserved. Bulit by Patryk Stachura &copy;
                     </div>
                 </nav>
                 <main class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                            <iframe width="500" height="240" src="https://www.youtube.com/embed/e06mZTxYGHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
                     
+                    
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                            </p>
+                            <p class="paragraph">
+                                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                            </p>
+        
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Lucy and 3 other friends recommend this hotel.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img href="#" src="img/user-3.jpg" alt="Alek" class="recommend__photo">
+                                    <img href="#" src="img/user-4.jpg" alt="Olek" class="recommend__photo">
+                                    <img href="#" src="img/user-5.jpg" alt="Bolek" class="recommend__photo">
+                                    <img href="#" src="img/user-6.jpg" alt="Benek" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+                            <button class="btn-inline">Show all <span>&rarr;</span></button>
+                        </div>
+                    </div>
                 </main>
             </div>
         </div>

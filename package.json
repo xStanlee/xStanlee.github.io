@@ -1,0 +1,33 @@
+{
+  "name": "engineering",
+  "version": "1.0.0",
+  "description": "Engineering project",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xStanlee/xStanlee.github.io.git"
+  },
+  "keywords": [
+    "Bachellor_5"
+  ],
+  "author": "Patryk_Stachura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xStanlee/xStanlee.github.io/issues"
+  },
+  "homepage": "https://github.com/xStanlee/xStanlee.github.io#readme",
+  "dependencies": {
+    "all": "0.0.0",
+    "autoprefixer": "^9.7.5",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
+  }
+}
