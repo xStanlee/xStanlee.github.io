@@ -15,3 +15,9 @@ ul > li {
     padding: 10rem 0;
     background-color: orangered;
 }
+
+li:hover {
+    color: black;
+    margin: 10rem;
+    outline: black;
+}
