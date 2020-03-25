@@ -283,6 +283,16 @@
         }
     }
 
+    &__label{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.4rem;
+        justify-self: center;
+        align-self: center;
+
+    }
+
 }
 
 /////////////////////////////////////
@@ -357,8 +367,7 @@
     
     border: none;
     color: var(--primary);
-    font-size: inherit;
-    border-bottom: 1px solid currentColor;
+    font-size: 2rem;
     padding: 0 0 2px 0;
     display: inline-block;
     background-color: transparent;
@@ -571,29 +580,21 @@
 }
 
 /////////////////////////////////////
-// CALL TO ACTION
-.cta {
-    width: 100%;
-    padding: 3.5rem 0;
-    text-align: center;
+// INPUT AVATAR
+#avatar {
+    border: none;
 
-    @media only screen and (max-width:$bp-medium){
-        padding: 2rem 0;
-    }
-
-    &__book-now{
-        font-size: 2rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-bottom: 2.5rem;
+    & > input{
+        cursor: pointer;
+        font-size: 3rem;
     }
 }
-
 /////////////////////////////////////
 // DOWN BUTTON
 .btn {
     font-size: 1.5rem;
     cursor: pointer;
+    max-width: min-content;
     color: #fff;
     font-weight: 300;
     text-transform: uppercase;
@@ -601,11 +602,13 @@
     border: none;
     background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
     position: relative;
+    margin: 3rem auto;
     overflow: hidden;
     box-shadow: var(--shadow-dark);
     animation: pulsate 1s infinite;
     
     & > *{
+        font-weight: 600;
         display: inline-block;
         height: 100%;
         width: 100%;
@@ -635,4 +638,45 @@
     &:hover &__invisible{
         top: 0;
     }
+
+    &__svg{
+        height: 3rem;
+        width: 3rem;
+        fill: #FFF;
+    }
 }
+
+/////////////////////////////
+// MESSAGE SECTION
+
+.mail {
+    align-self: center;
+    justify-self: center;  
+}
+
+//////////////////////////
+// NOTIFICATION MESSAGE
+#my-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border: none;
+
+    & > *{
+        align-self: center;
+        border: none;
+        border-radius: .7rem;
+
+        &:not(label){
+            box-shadow: 3px -1px 14px 0px rgba(0,0,0,0.15);
+            background-color: var(--grey-light-2);
+            margin-bottom: 2rem;
+        }
+    }
+
+    & > label{
+        font-family: inherit;
+        color: var(--primary);
+    }
+}
+

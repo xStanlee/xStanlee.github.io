@@ -89,34 +89,44 @@
                 <main class="hotel-view">
                 <div class="gallery">
                     <figure class="gallery__item">
-                            <iframe width="500" height="240" src="https://www.youtube.com/embed/e06mZTxYGHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="640" height="300" src="https://www.youtube.com/embed/e06mZTxYGHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </figure>
-                    
-                    
-                    <div class="detail">
-                        <div class="description">
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
-                            </p>
-                            <p class="paragraph">
-                                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
-                            </p>
+                    <div class="gallery__label">    
+                        <label for="file" class="btn-inline">Add content</label>
+                        <input type="file"
+                        id="avatar" name="avatar"
+                        accept="image/*, video/*">
+                    </div>   
+                    <button class="btn">
+                        <span class="btn__visible">File Upload</span>
+                        <span class="btn__invisible"> 
+                            <svg class="btn__svg">
+                                <use xlink:href="img/sprite.svg#icon-folder-upload"></use>
+                            </svg>
+                        </span>
+                </button>            
+                    <section class="message">
+                        <h1 class="message__text btn-inline">Send us a notification</h1>
+    
+                            <form id="my-form"
+                            action="https://formspree.io/mlelzpbk"
+                            method="POST"
+                            >
+                            <label>Device ID:</label>
+                            <input type="number" name="device_id" class="my-form__item"/>
+                            <label>Email:</label>
+                            <input type="email" name="email" class="my-form__item"/>
+                            <label>Message:</label>
+                            <textarea name="message" cols="40" rows="10" class="my-form__textarea" aria-required="true" aria-invalid="false"></textarea>
+                            <button class="my-form-button btn-inline">Send</button>
+                            <p id="my-form-status"></p>
+                            </form>
+                            
+                
+                    </section>
+                    <button class="btn-inline">Show full content<span>&rarr;</span></button>
+    
         
-                            <div class="recommend">
-                                <p class="recommend__count">
-                                    Lucy and 3 other friends recommend this hotel.
-                                </p>
-                                <div class="recommend__friends">
-                                    <img href="#" src="img/user-3.jpg" alt="Alek" class="recommend__photo">
-                                    <img href="#" src="img/user-4.jpg" alt="Olek" class="recommend__photo">
-                                    <img href="#" src="img/user-5.jpg" alt="Bolek" class="recommend__photo">
-                                    <img href="#" src="img/user-6.jpg" alt="Benek" class="recommend__photo">
-                                </div>
-                            </div>
-                        </div>
-                            <button class="btn-inline">Show all <span>&rarr;</span></button>
-                        </div>
-                    </div>
                 </main>
             </div>
         </div>

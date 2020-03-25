@@ -1,7 +1,7 @@
 //////////////////////
 //MEDIA QUERIES
 $bp-largest: 75em; // 1200px
-$width: $bp-largest;
+$width: 100em;
 $bp-large: 68.75em; // 1100px
 $bp-medium: 56.25em; // 900px
 $bp-small: 37.5em; // 600px
@@ -27,6 +27,11 @@ $bp-small: 37.5em; // 600px
 
     --grey-border: 1px solid var(--grey-light-2);
 }
+
+//////////////////////
+//SVG-FILL
+$light-fill: --grey-light-3;
+$dark-fill: --grey-dark-3;
 
 //////////////////////
 //GLOBAL PROPERTIES
