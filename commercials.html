@@ -48,16 +48,16 @@
             <div class="content">
                 <nav class="sidebar">
                     <ul class="side-nav">
-                        <li class="side-nav__item side-nav__item--active">
-                            <a href="#" class="side-nav__link">
+                        <li class="side-nav__item">
+                            <a href="index.html" class="side-nav__link">
                                 <svg class="side-nav__icon">
                                     <use xlink:href="img/sprite.svg#icon-play"></use>
                                 </svg>
                                 <span>Main</span>
                             </a>
                         </li>
-                        <li class="side-nav__item">
-                            <a href="commercials.html" class="side-nav__link">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
                                     <use xlink:href="img/sprite.svg#icon-film"></use>
                                 </svg>
@@ -87,47 +87,23 @@
                     </div>
                 </nav>
                 <main class="hotel-view">
-                <div class="gallery">
-                    <figure class="gallery__item">
-                            <iframe width="640" height="300" src="https://www.youtube.com/embed/e06mZTxYGHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </figure>
-                    <div class="gallery__label">    
-                        <label for="file" class="btn-inline">Add content</label>
-                        <input type="file"
-                        id="avatar" name="avatar"
-                        accept="image/*, video/*">
-                    </div>   
-                    <button class="btn">
-                        <span class="btn__visible">File Upload</span>
-                        <span class="btn__invisible"> 
-                            <svg class="btn__svg">
-                                <use xlink:href="img/sprite.svg#icon-folder-upload"></use>
-                            </svg>
-                        </span>
-                </button>            
-                    <section class="message">
-                        <h1 class="message__text btn-inline">Send us a notification</h1>
-    
-                            <form id="my-form"
-                            action="https://formspree.io/mlelzpbk"
-                            method="POST"
-                            >
-                            <label>Device ID:</label>
-                            <input type="number" name="device_id" class="my-form__item"/>
-                            <label>Email:</label>
-                            <input type="email" name="email" class="my-form__item"/>
-                            <label>Message:</label>
-                            <textarea name="message" cols="40" rows="10" class="my-form__textarea" aria-required="true" aria-invalid="false"></textarea>
-                            <button class="my-form-button btn-inline">Send</button>
-                            <p id="my-form-status"></p>
-                            </form>
-                            
-                
-                    </section>
-                    <button class="btn-inline">Show full content<span>&rarr;</span></button>
-    
-        
-                </main>
+                    <div class="gallery">     
+                        <section class="message">
+                            <h1 class="message__text btn-inline">Change incoming...</h1>
+                        </section>
+                        <figure class="gallery__item--com">
+                            <div class="gallery__single">
+                            <iframe width="640" height="300" src="https://www.youtube.com/embed/DgcI0mQXATI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="gallery__single">
+                            <iframe width="640" height="300" src="https://www.youtube.com/embed/tutZKLeGrCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="gallery__single">
+                            <iframe width="640" height="300" src="https://www.youtube.com/embed/Ox7DWq5Fe_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </figure>
+                    </div>
+                    </main>
             </div>
         </div>
     </body>

@@ -298,6 +298,19 @@ body {
     .gallery__item::before, .gallery__item::after {
       content: "";
       display: block; }
+    .gallery__item > * {
+      size: inherit; }
+  .gallery__item--com {
+    width: inherit;
+    background-image: linear-gradient(rgba(30, 101, 160, 0.83), rgba(23, 63, 95, 0.83)), url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-rows: min-content; }
+  .gallery__single {
+    margin-left: 8rem; }
   .gallery__label {
     margin-top: 5rem;
     display: grid;

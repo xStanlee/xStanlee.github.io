@@ -281,6 +281,26 @@
             content: "";
             display: block;
         }
+
+        & > * {
+            size: inherit;
+        }     
+    }
+
+    &__item--com {
+        width: inherit;
+        background-image: linear-gradient(rgba(30, 101, 160, .83), rgba( #173F5F, .83)), url(../img/background.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        
+        display: grid;
+        grid-template-columns: min-content;
+        grid-template-rows: min-content;
+    }
+
+    &__single{
+        margin-left: 8rem;
     }
 
     &__label{
