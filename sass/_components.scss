@@ -281,6 +281,14 @@
             content: "";
             display: block;
         }
+        
+        &--video {
+            @media only screen and(max-width: $bp-small){
+                
+                width: 40rem;
+                height: 24rem;
+            }
+        }
 
         & > * {
             size: inherit;
@@ -300,7 +308,7 @@
     }
 
     &__single{
-        margin-left: 8rem;
+        padding: 2vh 5.5vw;
     }
 
     &__label{

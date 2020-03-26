@@ -298,6 +298,10 @@ body {
     .gallery__item::before, .gallery__item::after {
       content: "";
       display: block; }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__item--video {
+        width: 40rem;
+        height: 24rem; } }
     .gallery__item > * {
       size: inherit; }
   .gallery__item--com {
@@ -310,7 +314,7 @@ body {
     grid-template-columns: min-content;
     grid-template-rows: min-content; }
   .gallery__single {
-    margin-left: 8rem; }
+    padding: 2vh 5.5vw; }
   .gallery__label {
     margin-top: 5rem;
     display: grid;
