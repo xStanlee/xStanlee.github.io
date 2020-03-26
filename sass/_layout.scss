@@ -1,3 +1,6 @@
+/////////////////////////
+// MAIN-BOX
+
 .container {
     max-width: $width;
     margin: 8rem auto;
@@ -13,6 +16,9 @@
     }
 }
 
+////////////////////////////////
+// HEADER
+
 .header {
     font-size: 1.4rem;
     height: 7.5rem;
@@ -24,6 +30,9 @@
     align-items: center;
 }
 
+/////////////////////////////////
+// SIDEBAR + MAIN CONTENT
+
 .content {
     display: flex;
 
@@ -31,6 +40,9 @@
         flex-direction: column;
     }
 }
+
+/////////////////////////////////
+// SIDEBAR
 
 .sidebar {
     background-color: var(--grey-dark-1);
@@ -41,10 +53,17 @@
     justify-content: space-between;
 }
 
-.hotel-view {
+/////////////////////////////////
+// CONTENT
+
+.content-view {
     background-color: #fff;
     flex: 1;
+    overflow: hidden;
 }
+
+////////////////////////////
+// MESSAGE-TEXT
 
 .message {
     font-size: 1.4rem;
@@ -69,28 +88,4 @@
         flex: 1 0 100%;
         margin-bottom: 2rem;
     }
-}
-
-.description {
-    font-size: 1.4rem;
-    background-color: #fff;
-    box-shadow: var(--shadow-light);
-    padding: 3rem;
-    flex: 0 0 60%;
-    margin-right: 4.5rem;
-
-    @media only screen and (max-width:$bp-medium){
-        padding: 1.8rem;
-        margin-right: 3rem;
-    }
-
-    @media only screen and (max-width:$bp-medium){
-        padding: 1.5rem;
-        margin-bottom: 3rem;
-    }
-}
-
-.user-reviews {
-    flex: 1;
-    text-align: center;
 }
