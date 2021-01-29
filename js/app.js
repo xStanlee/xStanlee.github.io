@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded, (ev) => {
+window.addEventListener('DOMContentLoaded', (ev) => {
   alert('Press enter to apply correct action on our LED screen.');
 
   const domElem = document.documentElement;
