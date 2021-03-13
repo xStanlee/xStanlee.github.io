@@ -348,7 +348,7 @@ body {
       rgba(30, 101, 160, 0.83),
       rgba(23, 63, 95, 0.83)
     ),
-    url(../img/background.jpg);
+    url(/background.004d778f.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -383,7 +383,7 @@ body {
       rgba(30, 101, 160, 0.83),
       rgba(23, 63, 95, 0.83)
     ),
-    url(../img/background.jpg);
+    url(/background.004d778f.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -533,3 +533,6 @@ body {
   font-family: inherit;
   color: var(--primary);
 }
+
+
+/*# sourceMappingURL=/style.78032849.css.map */

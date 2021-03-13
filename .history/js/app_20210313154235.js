@@ -1,5 +1,3 @@
-import {DrawingBoardUI} from '../after/DrawingBoardUI.js';
-
 window.addEventListener('DOMContentLoaded', (ev) => {
   alert('Press enter to apply correct action on our LED screen.');
 
@@ -11,7 +9,4 @@ window.addEventListener('DOMContentLoaded', (ev) => {
       domElem.requestFullscreen ? domElem.requestFullscreen() : alert('Problem with full screen mode please press F11');
     }
   }
-
-  const board = new DrawingBoardUI('.js-canvas', 54, 24);
-
 });

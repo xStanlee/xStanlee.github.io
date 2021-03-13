@@ -5,16 +5,16 @@ import {DrawingContextUI} from './after/DrawingContextUI.js'
 
 
 window.addEventListener('DOMContentLoaded', (ev) => {
-    // fullScreen instruction
     alert('Press enter to apply correct action on our LED screen.');
+
     const domElem = document.documentElement;
     document.addEventListener('keypress', fullScreenMode);
+
     function fullScreenMode(e) {
       if(e.code === 'Enter') { 
         domElem.requestFullscreen ? domElem.requestFullscreen() : alert('Problem with full screen mode please press F11');
       }
     }
-
     const factory = new ToolsFactory()
     const tools = new ToolsUI('.js-tools')
     const board = new DrawingBoardUI('.js-canvas', 54, 24)
@@ -28,4 +28,4 @@ window.addEventListener('DOMContentLoaded', (ev) => {
     tools.subscribe(selectedTool => {
         context.updateContext(selectedTool)
     });
-  });
+}

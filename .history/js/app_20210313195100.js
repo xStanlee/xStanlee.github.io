@@ -13,5 +13,5 @@ window.addEventListener('DOMContentLoaded', (ev) => {
   }
 
   const board = new DrawingBoardUI('.js-canvas', 54, 24);
-
+  console.log(board);
 });

@@ -52,7 +52,7 @@ body {
 
 .container {
   max-width: 100em;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 8rem auto;
   background-color: var(--grey-light-1);
   box-shadow: var(--shadow-dark);
   min-height: 50rem;

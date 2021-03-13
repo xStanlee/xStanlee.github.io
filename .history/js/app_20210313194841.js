@@ -1,4 +1,4 @@
-import {DrawingBoardUI} from '../after/DrawingBoardUI.js';
+import {DrawingBoardUI} from '.../after/DrawingBoardUI.js';
 
 window.addEventListener('DOMContentLoaded', (ev) => {
   alert('Press enter to apply correct action on our LED screen.');
@@ -12,6 +12,5 @@ window.addEventListener('DOMContentLoaded', (ev) => {
     }
   }
 
-  const board = new DrawingBoardUI('.js-canvas', 54, 24);
-
+  const board = new DrawingBoardUI('.js-canvas', 54, 24)
 });
