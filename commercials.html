@@ -1,110 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png">
-        
-        <title>Stanled &mdash; Visual innovate</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                
-                <img src="img/logo/pinterest_profile_image.png" alt="logo Stanled" class="logo">
 
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search video...">
-                    <button action="#" class="search__btn">
-                        <svg class="search__icon">
-                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
-                </form>
-                
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>H@ryzont</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <!-- favicon <link rel="icon" href="https://horyzont.eu/wp-content/uploads/2019/04/cropped-favicon-32x32.png" sizes="32x32"> !-->
+</head>
 
-                <nav class="user-nav">
-                <div class="user-nav__icon-box">
-                    <svg class="user-nav__icon">
-                        <use xlink:href="img/sprite.svg#icon-youtube2"></use>
-                    </svg>
-                </div>
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-folder-upload"></use>
-                        </svg>
-                    </div>
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-bubble"></use>
-                        </svg>
-                        <span class="user-nav__notification">13</span>
-                </nav>
+<body>
 
-            </header>
-            <div class="content">
-                <nav class="sidebar">
-                    <ul class="side-nav">
-                        <li class="side-nav__item">
-                            <a href="index.html" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-play"></use>
-                                </svg>
-                                <span>Main</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item side-nav__item--active">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-film"></use>
-                                </svg>
-                                <span>Commercials</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="payments.html" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-credit-card"></use>
-                                </svg>
-                                <span>Payments</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="spots.html" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-video-camera"></use>
-                                </svg>
-                                <span>Spots <sup>New!</sup></span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="legal">
-                        2020 All rights reserved. Bulit by Patryk Stachura &copy;
-                    </div>
-                </nav>
-                <main class="content-view">
-                    <div class="gallery">     
-                        <section class="message">
-                            <h1 class="message__text btn-inline">Change incoming...</h1>
-                        </section>
-                        <figure class="gallery__item--com">
-                            <div class="gallery__single">
-                            <iframe width="640" height="300" src="https://www.youtube.com/embed/DgcI0mQXATI" class="gallery__item--video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="gallery__single">
-                            <iframe width="640" height="300" src="https://www.youtube.com/embed/tutZKLeGrCs" class="gallery__item--video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="gallery__single">
-                            <iframe width="640" height="300" src="https://www.youtube.com/embed/Ox7DWq5Fe_w" class="gallery__item--video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </figure>
-                    </div>
-                    </main>
-            </div>
+    <div class="flex flex-column">
+        <div class="flex">
+            <div class="js-canvas"></div>
         </div>
-    </body>
+        <div class="flex js-tools"></div>
+        <div class="flex js-context"></div>
+        <img src="./logo_transparent.png" alt="Logo-sm" class="flex logo-img">
+    </div>
+    <footer class="flex main-link">
+        <h2 class="flex">
+            Go to main page
+        </h2>
+        <p class="copyright">2020 All rights reserved. Bulit by Patryk Stachura © </p>
+    </footer>
+
+    <script type="module" src="./after.js"></script>
+</body>
+
 </html>
