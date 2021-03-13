@@ -1,0 +1,113 @@
+:root {
+  --primary-light: #1e65a0;
+  --primary-dark: #173f5f;
+  --primary-grey-light: #faf9f9;
+  --primary-grey-dark: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open-sans", sans-serif;
+}
+
+h2 {
+  color: var(--primary-light);
+  text-transform: uppercase;
+  padding-top: 2vh;
+  transition: all 1s ease-in-out;
+}
+
+h2:hover {
+  color: var(--primary-grey-light);
+  transform: scale(1.06);
+}
+
+body {
+  width: 100vw;
+  height: min-content;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--primary-light),
+    var(--primary-dark)
+  );
+}
+
+.flex {
+  margin: 0 auto;
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-jc-center {
+  justify-content: center;
+}
+.flex-js-end {
+  justify-self: flex-end;
+}
+
+button {
+  border: none;
+  border: 2px solid var(--primary-dark);
+  font-size: 3.5rem;
+  border-radius: 5px;
+  color: #244752;
+  background: var(--primary-grey-light);
+  margin: 1.5rem 1rem 0 0;
+  padding: 5px 20px;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--primary-grey-light);
+  transform: scale(1.04);
+}
+
+button:active {
+  background: var(--primary-light);
+  color: white;
+}
+
+canvas {
+  background-color: black;
+  margin: 0 10px 10px -8px;
+  cursor: crosshair;
+}
+
+.js-context {
+  margin-top: 7vh;
+  text-transform: uppercase;
+  color: var(--primary-grey-light);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.logo-img {
+  width: 40%;
+  height: 40%;
+}
+
+.main-link {
+  width: 100%;
+  min-height: 10vh;
+  background-color: var(--primary-grey-dark);
+  flex-direction: column;
+  position: relative;
+}
+
+.copyright {
+  color: var(--primary-grey-light);
+  position: absolute;
+  align-self: flex-start;
+  left: 1rem;
+  bottom: 0;
+}
