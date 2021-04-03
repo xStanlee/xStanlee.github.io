@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png">
+        
+        <script src="./js/app.js"> </script>
+        <script src="./js/upgrade.js"> </script>
+        
+        <title>Stanled &mdash; Visual innovate</title>
+    </head>
+    <body>
+        <div class="flex">
+            <div class="js-canvas"></div>
+        </div>
+        <div class="container">
+            <header class="header">
+                
+                <img src="img/logo/pinterest_profile_image.png" alt="logo Stanled" class="logo">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search video...">
+                    <button action="#" class="search__btn">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+                
+
+                <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-youtube2"></use>
+                    </svg>
+                </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-folder-upload"></use>
+                        </svg>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bubble"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                </nav>
+
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-play"></use>
+                                </svg>
+                                <span>Main</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="commercials.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-film"></use>
+                                </svg>
+                                <span>Commercials</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="payments.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-credit-card"></use>
+                                </svg>
+                                <span>Payments</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="spots.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-video-camera"></use>
+                                </svg>
+                                <span>Spots <sup>New!</sup></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="legal">
+                        2020 All rights reserved. Bulit by Patryk Stachura &copy;
+                    </div>
+                </nav>
+                <main class="content-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                            <iframe width="640" height="300" src="https://www.youtube.com/embed/e06mZTxYGHE" class="gallery__item--video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
+                    <div class="gallery__label">    
+                        <label for="file" class="btn-inline">Add content</label>
+                        <input type="file"
+                        id="avatar" name="avatar"
+                        accept="image/*, video/*">
+                    </div>   
+                    <button class="btn">
+                        <span class="btn__visible">File Upload</span>
+                        <span class="btn__invisible"> 
+                            <svg class="btn__svg">
+                                <use xlink:href="img/sprite.svg#icon-folder-upload"></use>
+                            </svg>
+                        </span>
+                </button>            
+                    <section class="message">
+                        <h1 class="message__text btn-inline">Send us a notification</h1>
+    
+                            <form id="my-form"
+                            action="https://formspree.io/mlelzpbk"
+                            method="POST"
+                            >
+                            <label>Device ID:</label>
+                            <input type="number" name="device_id" class="my-form__item"/>
+                            <label>Email:</label>
+                            <input type="email" name="email" class="my-form__item"/>
+                            <label>Message:</label>
+                            <textarea name="message" cols="40" rows="10" class="my-form__textarea" aria-required="true" aria-invalid="false"></textarea>
+                            <button class="my-form-button btn-inline">Send</button>
+                            <p id="my-form-status"></p>
+                            </form>
+                            
+                
+                    </section>
+                    <button class="btn-inline">Show full content<span>&rarr;</span></button>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
