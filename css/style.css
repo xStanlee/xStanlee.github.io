@@ -325,6 +325,20 @@ body {
   }
 }
 
+.side-nav__video-container {
+  list-style: decimal;
+}
+
+.side-nav__video-item:hover {
+  opacity: 0;
+  box-shadow: none;
+}
+
+.side-nav__video-item > span {
+  margin: 0 auto 0 auto;
+  line-height: 1.7em;
+}
+
 .legal {
   font-size: 1.2rem;
   text-align: center;

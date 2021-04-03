@@ -3,6 +3,7 @@
   --primary-dark: #173f5f;
   --primary-grey-light: #faf9f9;
   --primary-grey-dark: #333333;
+  --canvas-background: #222;
 }
 
 * {
@@ -78,7 +79,7 @@ button:active {
 }
 
 canvas {
-  background-color: black;
+  background-color: var(--canvas-background);
   margin: 0 10px 10px -8px;
   cursor: crosshair;
 }
