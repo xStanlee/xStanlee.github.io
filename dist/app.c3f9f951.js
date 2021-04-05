@@ -181,13 +181,80 @@ var DrawingBoardUI = /*#__PURE__*/function () {
 }();
 
 exports.DrawingBoardUI = DrawingBoardUI;
+},{}],"video/video.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = videoStream;
+
+function videoStream(device, receiver) {
+  device.getUserMedia = device.getUserMedia || device.webkitGetUserMedia || device.mozGetUserMedia;
+
+  if (device.getUserMedia) {
+    device.getUserMedia({
+      audio: false,
+      video: {
+        width: 640,
+        height: 300
+      }
+    }, function (stream) {
+      var video = document.querySelector(receiver);
+      video.srcObject = stream;
+
+      video.onloadedmetadata = function (e) {
+        video.play();
+      };
+    }, function (err) {
+      console.log("The following error occurred: " + err.name);
+    });
+  } else {
+    console.log("getUserMedia not supported");
+  }
+}
+},{}],"video/content.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = chooseContent;
+
+function chooseContent(elements) {
+  var canvas;
+  elements.forEach(function (el) {
+    return el.addEventListener('click', function () {
+      var src = el.getAttribute('strStorage');
+      var myImage = new Image();
+      myImage.src = src;
+      myImage.height = '64px';
+      myImage.width = '32px';
+      setTimeout(function () {
+        canvas = document.querySelector('.js-canvas').children[0] || 'wtf?';
+        var ctx = canvas.getContext('2d');
+        ctx.drawImage(myImage, 0, 0);
+      }, 1000);
+    });
+  });
+}
 },{}],"js/app.js":[function(require,module,exports) {
 "use strict";
 
 var _DrawingBoardUI = require("../after/DrawingBoardUI.js");
 
+var _video = _interopRequireDefault(require("../video/video.js"));
+
+var _content = _interopRequireDefault(require("../video/content.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 window.addEventListener('DOMContentLoaded', function (ev) {
   alert('Press enter to apply correct action on our LED screen.');
+  var contents = document.querySelectorAll('.side-nav__video-item');
+  (0, _content.default)(contents);
+  (0, _video.default)(navigator, "video"); //playVideo();
+
   var domElem = document.documentElement;
   document.addEventListener('keypress', fullScreenMode);
 
@@ -199,7 +266,7 @@ window.addEventListener('DOMContentLoaded', function (ev) {
 
   var board = new _DrawingBoardUI.DrawingBoardUI('.js-canvas', 54, 24);
 });
-},{"../after/DrawingBoardUI.js":"after/DrawingBoardUI.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../after/DrawingBoardUI.js":"after/DrawingBoardUI.js","../video/video.js":"video/video.js","../video/content.js":"video/content.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -227,7 +294,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49691" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62757" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
